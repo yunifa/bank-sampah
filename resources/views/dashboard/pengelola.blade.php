@@ -25,11 +25,51 @@
         ];
 
         $transaksiTerkini = $transaksiTerkini ?? [
-            ['id' => 'ST-00128', 'waktu' => '07 Sep 2026 • 10:14 WIB', 'nasabah' => 'Budi Santoso', 'kelas' => 'XII RPL B', 'kategori' => 'Plastik Daur Ulang', 'warna' => '#330e01', 'berat' => 4.5, 'tarif' => 3000, 'total' => 13500, 'petugas' => 'Ibu Sri Wahyuni'],
-            ['id' => 'ST-00127', 'waktu' => '07 Sep 2026 • 09:48 WIB', 'nasabah' => 'Siti Aisyah', 'kelas' => 'X AKL 1', 'kategori' => 'Kardus & Box Tebal', 'warna' => '#855226', 'berat' => 8.2, 'tarif' => 2000, 'total' => 16400, 'petugas' => 'Ibu Sri Wahyuni'],
-            ['id' => 'ST-00126', 'waktu' => '07 Sep 2026 • 09:12 WIB', 'nasabah' => 'Pak Hendra, S.Pd.', 'kelas' => 'Guru BK / Tendik', 'kategori' => 'Logam & Kaleng', 'warna' => '#c1cba9', 'berat' => 3.0, 'tarif' => 6000, 'total' => 18000, 'petugas' => 'Ahmad Fauzi (Kader)'],
-            ['id' => 'ST-00125', 'waktu' => '07 Sep 2026 • 08:35 WIB', 'nasabah' => 'Dewi Anggraeni', 'kelas' => 'XI TBSM 2', 'kategori' => 'Botol Kaca Utuh', 'warna' => '#dfdac7', 'berat' => 6.0, 'tarif' => 1500, 'total' => 9000, 'petugas' => 'Ibu Sri Wahyuni'],
-            ['id' => 'ST-00124', 'waktu' => '06 Sep 2026 • 14:20 WIB', 'nasabah' => 'Rizky Maulana', 'kelas' => 'X DKV 3', 'kategori' => 'Plastik Daur Ulang', 'warna' => '#330e01', 'berat' => 2.8, 'tarif' => 3000, 'total' => 8400, 'petugas' => 'Ahmad Fauzi (Kader)'],
+            [
+                'id' => 'ST-00128', 'no_slip' => 'ST-20260907-0128', 'waktu' => '07 Sep 2026 • 10:14 WIB',
+                'nasabah' => 'Budi Santoso', 'kelas' => 'XII RPL B', 'status_nasabah' => 'Siswa Aktif', 'telepon' => '0812-3456-7890',
+                'kategori' => 'Plastik Daur Ulang', 'warna' => '#330e01',
+                'item_nama' => 'Botol Plastik PET Bening', 'item_grade' => 'Plastik Daur Ulang • Grade A',
+                'item_catatan' => 'Kondisi botol bersih & kering tanpa tutup segel.',
+                'berat' => 4.5, 'tarif' => 3000, 'total' => 13500,
+                'saldo_sebelum' => 35000, 'petugas' => 'Ibu Sri Wahyuni',
+            ],
+            [
+                'id' => 'ST-00127', 'no_slip' => 'ST-20260907-0127', 'waktu' => '07 Sep 2026 • 09:48 WIB',
+                'nasabah' => 'Siti Aisyah', 'kelas' => 'X AKL 1', 'status_nasabah' => 'Siswa Aktif', 'telepon' => '0813-2211-9087',
+                'kategori' => 'Kardus & Box Tebal', 'warna' => '#855226',
+                'item_nama' => 'Kardus Bekas Kemasan', 'item_grade' => 'Kardus & Box Tebal • Grade B',
+                'item_catatan' => 'Sudah dipipihkan, tidak basah.',
+                'berat' => 8.2, 'tarif' => 2000, 'total' => 16400,
+                'saldo_sebelum' => 52000, 'petugas' => 'Ibu Sri Wahyuni',
+            ],
+            [
+                'id' => 'ST-00126', 'no_slip' => 'ST-20260907-0126', 'waktu' => '07 Sep 2026 • 09:12 WIB',
+                'nasabah' => 'Pak Hendra, S.Pd.', 'kelas' => 'Guru BK / Tendik', 'status_nasabah' => 'Tenaga Pendidik', 'telepon' => '0857-1122-3344',
+                'kategori' => 'Logam & Kaleng', 'warna' => '#c1cba9',
+                'item_nama' => 'Kaleng Minuman Aluminium', 'item_grade' => 'Logam & Kaleng • Grade A',
+                'item_catatan' => 'Sudah dipipihkan sebagian.',
+                'berat' => 3.0, 'tarif' => 6000, 'total' => 18000,
+                'saldo_sebelum' => 120000, 'petugas' => 'Ahmad Fauzi (Kader)',
+            ],
+            [
+                'id' => 'ST-00125', 'no_slip' => 'ST-20260907-0125', 'waktu' => '07 Sep 2026 • 08:35 WIB',
+                'nasabah' => 'Dewi Anggraeni', 'kelas' => 'XI TBSM 2', 'status_nasabah' => 'Siswa Aktif', 'telepon' => '0821-7788-0099',
+                'kategori' => 'Botol Kaca Utuh', 'warna' => '#dfdac7',
+                'item_nama' => 'Botol Kaca Sirup Utuh', 'item_grade' => 'Botol Kaca Utuh • Grade A',
+                'item_catatan' => 'Tidak retak/pecah.',
+                'berat' => 6.0, 'tarif' => 1500, 'total' => 9000,
+                'saldo_sebelum' => 18000, 'petugas' => 'Ibu Sri Wahyuni',
+            ],
+            [
+                'id' => 'ST-00124', 'no_slip' => 'ST-20260906-0124', 'waktu' => '06 Sep 2026 • 14:20 WIB',
+                'nasabah' => 'Rizky Maulana', 'kelas' => 'X DKV 3', 'status_nasabah' => 'Siswa Aktif', 'telepon' => '0895-4433-2211',
+                'kategori' => 'Plastik Daur Ulang', 'warna' => '#330e01',
+                'item_nama' => 'Gelas Plastik Bekas Minuman', 'item_grade' => 'Plastik Daur Ulang • Grade B',
+                'item_catatan' => 'Campuran beberapa merek, sudah dibilas.',
+                'berat' => 2.8, 'tarif' => 3000, 'total' => 8400,
+                'saldo_sebelum' => 41500, 'petugas' => 'Ahmad Fauzi (Kader)',
+            ],
         ];
 
         $totalTransaksi = $totalTransaksi ?? 128;
@@ -215,7 +255,7 @@
                             <td class="px-4 py-4 text-[12px] tracking-[0.12px] text-[#330e01]">{{ $row['petugas'] }}</td>
                             <td class="px-4 py-4">
                                 <div class="flex items-center justify-center gap-2 text-[13px]">
-                                    <button type="button" title="Detail">📄</button>
+                                    <button type="button" title="Detail" onclick="document.getElementById('modal-detail-{{ $row['id'] }}').classList.remove('hidden')">📄</button>
                                     <button type="button" title="Cetak">🖨️</button>
                                 </div>
                             </td>
@@ -224,6 +264,141 @@
                 </tbody>
             </table>
         </div>
+
+        {{-- ===== Modal Detail Transaksi (satu per baris transaksi) ===== --}}
+        @foreach ($transaksiTerkini as $row)
+            @php $saldoAkhir = $row['saldo_sebelum'] + $row['total']; @endphp
+            <div id="modal-detail-{{ $row['id'] }}" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-[rgba(78,34,15,0.65)] p-6 backdrop-blur-[3px]">
+                <div class="flex w-full max-w-[768px] flex-col overflow-hidden rounded-2xl border border-[rgba(215,194,187,0.4)] bg-white shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)]">
+
+                    {{-- Header --}}
+                    <div class="flex items-center justify-between border-b border-[rgba(215,194,187,0.3)] bg-[rgba(250,243,224,0.8)] px-6 py-4">
+                        <div class="flex items-center gap-3">
+                            <span class="flex size-10 items-center justify-center rounded-xl bg-[rgba(133,82,38,0.15)] text-[18px] shadow-sm">🧾</span>
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <h3 class="text-[18px] font-bold tracking-[-0.45px] text-[#330e01]">Detail Transaksi Setoran</h3>
+                                    <span class="rounded-full bg-[#dde7c4] px-2 py-0.5 text-[11px] font-semibold tracking-[0.44px] text-[#161e08]">✓ Sukses / Terverifikasi</span>
+                                </div>
+                                <p class="text-[12px] tracking-[0.12px] text-[#52443e]">Rincian bukti penerimaan sampah dan kredit saldo nasabah</p>
+                            </div>
+                        </div>
+                        <button type="button" onclick="document.getElementById('modal-detail-{{ $row['id'] }}').classList.add('hidden')"
+                                class="flex size-8 items-center justify-center rounded-lg text-[#52443e] hover:bg-[rgba(0,0,0,0.05)]">✕</button>
+                    </div>
+
+                    {{-- Body --}}
+                    <div class="flex max-h-[600px] flex-col gap-4 overflow-auto p-6">
+
+                        {{-- Info strip --}}
+                        <div class="grid grid-cols-4 gap-3 rounded-xl border border-[rgba(215,194,187,0.3)] bg-[rgba(250,243,224,0.6)] p-3.5">
+                            <div>
+                                <p class="text-[11px] uppercase tracking-[0.55px] text-[#52443e]">ID_Setoran (PK)</p>
+                                <p class="text-[13px] font-bold tracking-[0.26px] text-[#855226]">#{{ $row['id'] }}</p>
+                            </div>
+                            <div>
+                                <p class="text-[11px] uppercase tracking-[0.55px] text-[#52443e]">No. Slip / Transaksi</p>
+                                <p class="text-[12px] font-semibold tracking-[0.12px] text-[#330e01]">{{ $row['no_slip'] }}</p>
+                            </div>
+                            <div>
+                                <p class="text-[11px] uppercase tracking-[0.55px] text-[#52443e]">Waktu Setor</p>
+                                <p class="text-[12px] tracking-[0.12px] text-[#1e1c10]">{{ $row['waktu'] }}</p>
+                            </div>
+                            <div>
+                                <p class="text-[11px] uppercase tracking-[0.55px] text-[#52443e]">Petugas Validasi</p>
+                                <p class="text-[12px] tracking-[0.12px] text-[#1e1c10]">{{ $row['petugas'] }}</p>
+                            </div>
+                        </div>
+
+                        {{-- Profil nasabah --}}
+                        <div class="flex items-center justify-between rounded-xl border border-[rgba(215,194,187,0.3)] bg-white p-[17px] shadow-sm">
+                            <div class="flex items-center gap-3">
+                                <span class="flex size-12 items-center justify-center rounded-xl border border-[rgba(133,82,38,0.2)] bg-[rgba(133,82,38,0.15)] text-[13px] font-bold text-[#855226]">
+                                    {{ collect(explode(' ', $row['nasabah']))->map(fn($w) => $w[0])->take(2)->implode('') }}
+                                </span>
+                                <div>
+                                    <div class="flex items-center gap-2">
+                                        <p class="text-[16px] font-bold text-[#330e01]">{{ $row['nasabah'] }}</p>
+                                        <span class="rounded-full bg-[#f4eedb] px-2 py-0.5 text-[11px] text-[#52443e]">{{ $row['status_nasabah'] }}</span>
+                                    </div>
+                                    <div class="flex items-center gap-3 pt-0.5 text-[12px] tracking-[0.12px] text-[#52443e]">
+                                        <span>🎓 {{ $row['kelas'] }}</span>
+                                        <span>📞 {{ $row['telepon'] }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-[11px] font-semibold tracking-[0.44px] text-[#52443e]">Petugas Loket</p>
+                                <p class="text-[13px] font-semibold tracking-[0.26px] text-[#330e01]">{{ $row['petugas'] }}</p>
+                            </div>
+                        </div>
+
+                        {{-- Item penimbangan --}}
+                        <div class="overflow-hidden rounded-xl border border-[rgba(215,194,187,0.3)]">
+                            <div class="border-b border-[rgba(215,194,187,0.2)] bg-[#faf3e0] px-4 py-2">
+                                <p class="text-[11px] font-bold uppercase tracking-[0.55px] text-[#330e01]">♻️ Item Penimbangan Sampah</p>
+                            </div>
+                            <div class="bg-white p-4">
+                                <div class="flex items-center justify-between border-b border-[rgba(215,194,187,0.2)] pb-3">
+                                    <div class="flex items-start gap-3">
+                                        <span class="flex size-9 items-center justify-center rounded-lg bg-[#f4eedb] text-[16px]">♻️</span>
+                                        <div>
+                                            <p class="text-[13px] font-bold tracking-[0.26px] text-[#330e01]">{{ $row['item_nama'] }}</p>
+                                            <p class="text-[12px] tracking-[0.12px] text-[#52443e]">Kategori: {{ $row['item_grade'] }}</p>
+                                            <p class="text-[12px] italic text-[#85736d]">Catatan: {{ $row['item_catatan'] }}</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-4 text-right">
+                                        <div>
+                                            <p class="text-[11px] font-semibold tracking-[0.44px] text-[#52443e]">Berat</p>
+                                            <p class="text-[18px] font-bold text-[#330e01]">{{ number_format($row['berat'], 1) }} <span class="text-[12px] font-medium text-[#52443e]">Kg</span></p>
+                                        </div>
+                                        <div>
+                                            <p class="text-[11px] font-semibold tracking-[0.44px] text-[#52443e]">Tarif / Kg</p>
+                                            <p class="text-[14px] text-[#1e1c10]">Rp {{ number_format($row['tarif'], 0, ',', '.') }}</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-[11px] font-semibold tracking-[0.44px] text-[#52443e]">Subtotal</p>
+                                            <p class="text-[18px] font-bold text-[#855226]">Rp {{ number_format($row['total'], 0, ',', '.') }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {{-- Mutasi saldo --}}
+                                <div class="mt-3 rounded-lg border border-[rgba(252,184,131,0.4)] bg-[rgba(255,220,195,0.3)] p-3.5">
+                                    <div class="flex items-center justify-between text-[12px] text-[#52443e]">
+                                        <span>Saldo Sebelum Setor</span>
+                                        <span class="text-[#1e1c10]">Rp {{ number_format($row['saldo_sebelum'], 0, ',', '.') }}</span>
+                                    </div>
+                                    <div class="mt-1 flex items-center justify-between text-[12px] font-semibold text-[#855226]">
+                                        <span>⊕ Kredit Masuk (+)</span>
+                                        <span>+ Rp {{ number_format($row['total'], 0, ',', '.') }}</span>
+                                    </div>
+                                    <div class="mt-1.5 flex items-center justify-between border-t border-[rgba(133,82,38,0.2)] pt-1.5">
+                                        <span class="text-[11px] font-bold uppercase tracking-[0.44px] text-[#330e01]">Total Saldo Akhir</span>
+                                        <span class="text-[18px] font-extrabold text-[#330e01]">Rp {{ number_format($saldoAkhir, 0, ',', '.') }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{-- Footer --}}
+                    <div class="flex items-center justify-between border-t border-[rgba(215,194,187,0.3)] bg-[rgba(250,243,224,0.8)] px-6 py-4">
+                        <p class="text-[12px] text-[#52443e]">🖨️ Format struk mendukung printer thermal 58/80mm & A4</p>
+                        <div class="flex items-center gap-2">
+                            <button type="button" onclick="document.getElementById('modal-detail-{{ $row['id'] }}').classList.add('hidden')"
+                                    class="rounded-lg border border-[rgba(215,194,187,0.6)] px-4 py-2 text-[13px] font-semibold tracking-[0.26px] text-[#1e1c10]">
+                                Tutup
+                            </button>
+                            <button type="button" class="flex items-center gap-1.5 rounded-lg bg-[#f4eedb] px-4 py-2 text-[13px] font-semibold tracking-[0.26px] text-[#330e01] shadow-sm">
+                                ⬇️ Unduh PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endforeach
 
         {{-- Pagination --}}
         <div class="mt-2 flex items-center justify-between pt-2">
