@@ -36,8 +36,8 @@
                         $menu = [
                             ['label' => 'Dashboard', 'route' => 'dashboard.pengelola', 'icon' => '🏠'],
                             ['label' => 'Nasabah', 'route' => 'nasabah.index', 'icon' => '👤'],
-                            ['label' => 'Jenis Sampah', 'route' => null, 'icon' => '♻️'],
-                            ['label' => 'Riwayat Transaksi', 'route' => null, 'icon' => '📄'],
+                            ['label' => 'Jenis Sampah', 'route' => 'jenis-sampah.index', 'icon' => '♻️'],
+                            ['label' => 'Riwayat Transaksi', 'route' => 'transaksi.index', 'icon' => '📄'],
                             ['label' => 'Akun', 'route' => null, 'icon' => '⚙️'],
                         ];
                     @endphp
